@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FrontEnd/Css/chat.css">
+    <script src="/FrontEnd/JS/socket.js" defer></script>
+    <script src="/FrontEnd/JS/messages.js" defer></script>
+    <title>chat UI</title>                   
+</head>
+<body>
+  <div class="chat-container"                              >
+    <div class="messages-container" id="message-container-div">
+        <!-- <div class="received-message-container">
+            <strong>username</strong>
+            <p>the message received</p>
+            <mark>00:00</mark>
+        </div>
+        <div class="sent-message-container">
+            <p>the message received</p>
+            <mark>00:00</mark>
+        </div>
+        <div class="warning-message-container" id="warning">
+            <p>the warning</p>
+        </div> -->
+    </div>
+    <div class="text-input-container">
+        <input id="message-body"  placeholder="Enter a message"> </input>
+        <button id="send-button" onclick="submitMessage();"> SEND </button>
+    </div>
+</div>
+      
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="FrontEnd/JS/jqueryCompressed.js" defer></script>
+    <link rel="stylesheet" href="FrontEnd/Css/style.css">
+    <script src ="FrontEnd/JS/script.js" defer></script>
+    <title>Welcome to chatUI</title>
+</head>
+<body>
+    <!-- SECURITY AND LOGIN PART -->
+    
+         <!-- REGISTER PAGE FRAGMENT -->
+<div id="register-page">
+<h1>Welcome to chatUI.....</h1>
+<div class="form">
+<!-- the registration form  -->  
+<!-- submit usig PHP -->
+<form action="server/php/register.php"  method="post" id="myForm">
+   <div class="inputs">
+      <label for="user-name">Username:</label>
+      <input name="user_name" type="text" id="user-name" placeholder="user name" maxlength="20" autocomplete="off"><i>*</i><br>
+      <p id="name-error-message" class="error"></p>
+   </div> 
+   <div class="inputs">
+      <label for="phone-no">Phone NO:</label>
+      <input name="phone_no" type="text" id="phone-no" placeholder="Phone number" maxlength="13" autocomplete="off"><i>*</i><br>
+      <p id="phone-error-message" class="error"></p>
+   </div>
+   <div class="inputs">
+      <label for="password">Password:</label>
+      <input name="password" type="password" id="password" placeholder="eg: ##Solar001" maxlength="15"><i>*</i><br>
+      <p id="password-error-message" class="error"></p>
+   </div>
+   <div class="inputs">
+      <button type="submit"   id="submitButton" name="Validate">Create Account</button><br>
+     <h6> <a href="login.html" id="loginlink" onclick="openAccountActionPage();">already have an Account? Log in.</a> </h6>
+   </div>
+</form>
+</div>
+</div>
+
+  
+</body>
+</html>

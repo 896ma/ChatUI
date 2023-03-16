@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="FrontEnd/JS/jqueryCompressed.js" defer></script>
+    <!-- <script src ="FrontEnd/JS/login.js" defer></script> -->
+    <link rel="stylesheet" href="FrontEnd/Css/style.css">
+    <title>Welcome to chatUI</title>
+</head>
+<body>
+   
+    <!-- LOGIN PAGE FRAGMENT --> 
+ 
+      <h1>Welcome back to chatUI .....</h1>
+     
+      <form action="server/php/login.php" method="post" id="loginForm">
+          <label for="phone-no">Phone NO:</label>  
+          <input name="phone_no" type="text" id="login-phone-no" placeholder="phone number " maxlength="10" autocomplete="off"><i>*</i><br>
+          <p id="login-phone-error-message" class="error"></p>
+          <label for="password">Password:</label>
+          <input name="password" type="password" id="login-password" placeholder="##Solar001 " maxlength="15" autocomplete="off"><i>*</i><br>
+          <p id="login-password-error-message" class="error"></p>
+          <button type="submit"  id="loginSubmitButton" name="Validate">Log In</button>
+          <h6> <a href="index.html" id="loginlink">Don't have an Account? Create account.</a> </h6>
+    </form>
+
+</body>
+</html>
